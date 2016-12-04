@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output} from '@angular/core';
 
 @Component({
   selector: 'main-header',
@@ -7,7 +7,9 @@ import { Component } from '@angular/core';
 })
 export class MainheaderComponent {
 
-  constructor() { }
+  menu_state = false;
+  search_state = false;
 
+  constructor() { }
 
 }

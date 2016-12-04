@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { MainheaderComponent } from './mainheader/mainheader.component';
 import { MainnavComponent } from './mainnav/mainnav.component';
+import { MainoptionsComponent } from './mainoptions/mainoptions.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainheaderComponent,
-    MainnavComponent
+    MainnavComponent,
+    MainoptionsComponent
   ],
   imports: [
     BrowserModule,

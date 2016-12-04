@@ -1,12 +1,13 @@
-<mainnav></mainnav>
+<mainnav [state]="menu_state" (closemenu)="menu_state=false"></mainnav>
+<mainoptions [state]="search_state" (closeopts)="search_state=false"></mainoptions>
 <header class="Header">
-  <div class="menu" (click)="open_nav()">
+  <div class="menu" (click)="menu_state=true">
     G
   </div>
   <div class="center-title">
     JaNGmendo
   </div>
-  <div class="search">
-    Op
+  <div class="search" (click)="search_state=true">
+    Search
   </div>
 </header>

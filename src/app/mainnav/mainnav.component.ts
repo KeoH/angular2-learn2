@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, EventEmitter, Output} from '@angular/core';
 
 @Component({
   selector: 'mainnav',
@@ -7,13 +7,14 @@ import { Component } from '@angular/core';
 })
 export class MainnavComponent {
 
-  state = false;
-
-  constructor() { }
+  @Input() state;
+  @Output() closemenu = new EventEmitter();
 
   close_nav(){
-    console.log("Cerrando nav");
-    this.state = true;
+    this.state = false;
+    this.closemenu.emit();
   }
+
+  constructor() { }
 
 }
